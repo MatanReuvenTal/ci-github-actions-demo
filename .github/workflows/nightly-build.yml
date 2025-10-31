@@ -1,0 +1,11 @@
+name: 02 - Nightly Build Schedule
+on:
+  schedule:
+    - cron: ' 0 0 * * *'
+
+jobs:
+  nightly_build_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print completion message
+        run: echo : "Nightly build completed successfully"

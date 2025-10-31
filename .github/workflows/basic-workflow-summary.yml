@@ -1,4 +1,4 @@
-name: basic-workflow-summary.yml
+name: 01 - Basic Workflow Example
 on:
   push:
     branches: [main]
