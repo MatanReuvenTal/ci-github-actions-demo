@@ -1,0 +1,15 @@
+name: Self-Hosted Runner Demonstration
+on:
+  workflow_dispatch:
+jobs:
+  demonstration-job:
+    runs-on: self-hosted
+
+    steps:
+        - name: Show runner details
+          run: |
+            echo "This job is running on a self-hosted runner!"
+            echo "----------------------------------------------"
+            echo "Runner Name: ${{ runner.name }}"
+            echo "Operating System: ${{ runner.os }}"
+            echo "Hostname of the machine is: $(hostname)"
