@@ -1,4 +1,4 @@
-name: task2-tests-workflow.yml
+name: Task-02-Tests-Workflow
 on:
   push:
     branches: [main]

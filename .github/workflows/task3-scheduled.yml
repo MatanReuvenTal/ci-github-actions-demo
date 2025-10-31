@@ -1,0 +1,13 @@
+name: Task-03-Scheduled-Workflow
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  scheduled_build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: Print completion message
+        run: echo "Scheduled build completed successfully!"
